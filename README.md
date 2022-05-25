@@ -100,8 +100,9 @@ Json格式：
 Task1_ACC=正确答案个数/题目总数
 ~~~
 > 子任务2（支持句识别）：以F1作为评价指标，计算公式如下：
-**The Cauchy-Schwarz Inequality**
+~~~
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+~~~
 *****
 其中，与分别表示真实结果与预测结果，表示计算二者共有的token长度，表示计算token长度。
 > 子任务三（错误类型识别）：以准确率（Accuracy）作为评价指标。
