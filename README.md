@@ -17,12 +17,12 @@
 本评测使用山西大学提供的GCRC数据集，数据主要来源于高考语文阅读理解题目。数据集相关信息如表1所示。
 <p align='center'>表1 GCRC数据集规模</p>
 <table align='center'>
-<tr>
+<tr align='center'>
 <td>     </td>
 <td> Training-Set  </td>
 <td> Dev-Set </td>
 </tr>
-<tr>
+<tr align='center'>
 <td> 子任务1的篇章数  </td>
 <td> 3790 </td>
 <td> 683 </td>
@@ -40,7 +40,7 @@
 <td> 2000/3253 </td>
 <td> 863/1437 </td>
 </tr>
-<tr>
+<tr align='center'>
 <td> 标注推理能力的问题/选项数  </td>
 <td> - </td>
 <td> 863/3452 </td>
