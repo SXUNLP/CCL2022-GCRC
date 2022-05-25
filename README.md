@@ -96,11 +96,12 @@ Json格式：
 
 ## 3.评价标准
 > 子任务1(问答任务)：以准确率（Accuracy）作为评价指标，具体定义如下：
+$$Task1_ACC=\frac{正确答案个数}{题目总数}$$
 ~~~
 Task1_ACC=正确答案个数/题目总数
 ~~~
 > 子任务2（支持句识别）：以F1作为评价指标，计算公式如下：
-$$Task-F1=\frac{\displaystyle\sum_{i=1}^{N} F1_i}{N}$$
+$$Task2_F1=\frac{\displaystyle\sum_{i=1}^{N} F1_i}{N}$$
 
 *****
 其中，与分别表示真实结果与预测结果，表示计算二者共有的token长度，表示计算token长度。
