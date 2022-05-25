@@ -109,9 +109,8 @@ $$recall=\frac{InterSec(gold,pred)}{Len(gold)}$$
 $$Task3-ACC=\frac{正确预测个数}{错误选项总数}$$
 
 参赛系统的最终得分由上述三个指标综合决定，具体计算公式如下：
-~~~
-Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
-~~~
+$$Score=\frac{Task1_ACC+Task2_F1+Task3_ACC}{3}$$
+
 指标计算脚本eval.py会随训练集一起发布。
 
 ## 4.报名方式及评测赛程
