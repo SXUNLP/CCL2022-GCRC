@@ -3,14 +3,14 @@
 - 组织者：谭红叶(hytan_2006@126.com)
 - 联系人：孙欣伊(sxy_sxu@163.com)，赵云肖，闫智超
 
-评测任务更详细内容可查看评测网站：[https://github.com/SXUNLP/CCL2022-GCRC](https://github.com/blcuicall/CCL2022-CGEC)，遇到任何问题请发邮件或者在[Issue](https://github.com/SXUNLP/CCL2022-GCRC/issues)中提问，欢迎大家参与。
+评测任务详细内容可查看评测网站：[https://github.com/SXUNLP/CCL2022-GCRC](https://github.com/blcuicall/CCL2022-CGEC)，遇到任何问题请发邮件或在[Issue](https://github.com/SXUNLP/CCL2022-GCRC/issues)中提问，欢迎大家参与。
 
 ## 1.任务内容
 ### 任务简介：
 机器阅读理解（Machine Reading Comprehension, MRC）是自然语言处理和人工智能领域的重要前沿课题，对提升机器的智能水平具有重要价值。目前，在众多公开可用数据集的驱动下，机器阅读理解模型取得了令人振奋的进展，但模型所具备的真实语言理解能力与人的期望相差甚远。为了促进机器智能向类人智能迈进，我们提出了“高考语文阅读理解可解释评测”任务(Gaokao Chinese Reading Comprehension, GCRC)。该任务不仅对模型的答题准确率进行评价，而且引入两个子任务“支持句识别”和“错误类型识别”对模型的中间推理能力进行评价，此外还提供了答题所需推理能力信息，帮助诊断模型的不足。具体来说，参赛者需要完成以下3个子任务：
-- （1）子任务1（问题回答）：输出问题答案。
-- （2）子任务2（支持句识别）：输出支持问题解答所需的原文句子，即每个选项对应的原文支持句。
-- （3）子任务3（错误类型识别）：针对错误选项，输出其错误类型。错误类型具体有7种（括号内为类型标签）：细节错误（Wrong details，DTL）、时间属性错误(Wrong temporal properties，TEMP)、主谓不一致（Wrong subject-predicate-object triple relationship，SPOT）、充要条件错误（Wrong necessary and sufficient conditions，NAS）、答非所问(Irrelevant to the question，ITQ)、因果错误（Wrong causality，CAUS）、无中生有（Irrelevant to the article，ITA）。
+- 子任务1（问题回答）：输出问题答案。
+- 子任务2（支持句识别）：输出支持问题解答所需的原文句子，即每个选项对应的原文支持句。
+- 子任务3（错误类型识别）：针对错误选项，输出其错误类型。错误类型具体有7种（括号内为类型标签）：细节错误（Wrong details，DTL）、时间属性错误(Wrong temporal properties，TEMP)、主谓不一致（Wrong subject-predicate-object triple relationship，SPOT）、充要条件错误（Wrong necessary and sufficient conditions，NAS）、答非所问(Irrelevant to the question，ITQ)、因果错误（Wrong causality，CAUS）、无中生有（Irrelevant to the article，ITA）。
 
 ## 2.评测数据
 数据集规模
@@ -73,7 +73,8 @@ Json格式：
   "reasoning_ability": ["DTL-R","DTL-R","IND","IND"],
   "error_type": ["ITQ", "", "", ""],
   "answer": "A"
-}~~~
+}
+~~~
 
 注：在数据样例中，字段“answer”、“evidences”和“error_type”分别对应子任务1（问题回答）、子任务2（支持句识别）和子任务3（错误类型识别）的输出。其中“error_type”字段只输出错误选项的错误类型。例如在本例中，“question”字段要求机器选出不正确的选项，本样例只有选项A与原文意思不符，因此“error_type”字段仅输出选项A的错误类型。
 ## 3.评价标准
@@ -99,7 +100,6 @@ Task3_ACC=正确预测个数/错误选项总数
 - 4.审核模型，公布评测结果：8月30日
 - 5.提交评测论文：9月25日
 - 6.报告及颁奖：10月14日
-
 （以上时间均为暂定，请关注 [CCL 2022](http://cips-cl.org/static/CCL2022/index.html) 官方网站。）
 
 结果提交：
