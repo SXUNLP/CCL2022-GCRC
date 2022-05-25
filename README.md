@@ -100,7 +100,7 @@ $$Task1-ACC=\frac{正确答案个数}{题目总数}$$
 
 > 子任务2（支持句识别）：以F1作为评价指标，计算公式如下：
 $$Task2-F1=\frac{\displaystyle\sum_{i=1}^{N} F1_i}{N}$$
-$$F1_i=\frac{2*precision*recall}{precision+recall}$$
+$$F1=\frac{2*precision*recall}{precision+recall}$$
 $$precision=\frac{InterSec(gold,pred)}{Len(pred)}$$
 $$recall=\frac{InterSec(gold,pred)}{Len(gold)}$$
 
