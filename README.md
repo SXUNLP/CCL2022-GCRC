@@ -5,11 +5,17 @@
 hytan_2006@126.com 或sxy_sxu@163.com
 
 ## 1.任务内容
+
+---
 任务简介：
+
+---
 机器阅读理解（Machine Reading Comprehension, MRC）是自然语言处理和人工智能领域的重要前沿课题，对提升机器的智能水平具有重要价值。目前，在众多公开可用数据集的驱动下，机器阅读理解模型取得了令人振奋的进展，但模型所具备的真实语言理解能力与人的期望相差甚远。为了促进机器智能向类人智能迈进，我们提出了“高考语文阅读理解可解释评测”任务(Gaokao Chinese Reading Comprehension, GCRC)。该任务不仅对模型的答题准确率进行评价，而且引入两个子任务“支持句识别”和“错误类型识别”对模型的中间推理能力进行评价，此外还提供了答题所需推理能力信息，帮助诊断模型的不足。具体来说，参赛者需要完成以下3个子任务：
 （1）子任务1（问题回答）：输出问题答案。
 （2）子任务2（支持句识别）：输出支持问题解答所需的原文句子，即每个选项对应的原文支持句。
 （3）子任务3（错误类型识别）：针对错误选项，输出其错误类型。错误类型具体有7种（括号内为类型标签）：细节错误（Wrong details，DTL）、时间属性错误(Wrong temporal properties，TEMP)、主谓不一致（Wrong subject-predicate-object triple relationship，SPOT）、充要条件错误（Wrong necessary and sufficient conditions，NAS）、答非所问(Irrelevant to the question，ITQ)、因果错误（Wrong causality，CAUS）、无中生有（Irrelevant to the article，ITA）。
+
+---
 ## 2.评测数据
 数据集规模
 本评测使用山西大学提供的GCRC数据集，数据主要来源于高考语文阅读理解题目。数据集相关信息如表1所示。
@@ -27,7 +33,7 @@ hytan_2006@126.com 或sxy_sxu@163.com
 数据样例
 每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、问题(question)、选项(options)、选项支持句(evidences)、推理能力(reasoning_ability)、错误类型(error_type)、答案(answer)。具体数据样例如下所示。
 
-  <h1>Json格式：
+  <h5>Json格式：
 { "id": "gcrc_4916_8172", 
   "title": "我们需要怎样的科学素养", 
   "passage": "第八次中国公民科学素养调查显示，2010年，我国具备...激励科技创新、促进创新型国家建设，我们任重道远。", 
@@ -47,7 +53,7 @@ hytan_2006@126.com 或sxy_sxu@163.com
   "reasoning_ability": ["DTL-R","DTL-R","IND","IND"],
   "error_type": ["ITQ", "", "", ""],
   "answer": "A"
-}</h1>
+}</h5>
 
 注：在数据样例中，字段“answer”、“evidences”和“error_type”分别对应子任务1（问题回答）、子任务2（支持句识别）和子任务3（错误类型识别）的输出。其中“error_type”字段只输出错误选项的错误类型。例如在本例中，“question”字段要求机器选出不正确的选项，本样例只有选项A与原文意思不符，因此“error_type”字段仅输出选项A的错误类型。
 ## 3.评价标准
