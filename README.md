@@ -1,7 +1,7 @@
 # CCL 2022 高考语文阅读理解可解释评测
-[山西大学自然语言处理团队]
+> 山西大学自然语言处理团队
 - 组织者：谭红叶(hytan_2006@126.com)
-- 联系人：孙欣伊(sxy_sxu@163.com),赵云肖，闫智超
+- 联系人：孙欣伊(sxy_sxu@163.com)，赵云肖，闫智超
 
 ## 1.任务内容
 任务简介：
@@ -26,8 +26,8 @@
 注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。具体推理能力（括号内为标签标号）为：细节推理（Detail understanding，DTL-R）、共指推理（Coreference resolution，CO-REF）、演绎推理（Deductive reasoning，DED）、数字推理（Mathematical reasoning，MATH）、时空推理（Temporal/spatial reasoning，TEM-SPA）、因果推理（Cause-effect comprehension，CAUS-R）、归纳推理（Inductive reasoning，IND）、鉴赏分析（Appreciative analysis，APPREC）。
 数据样例
 每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、问题(question)、选项(options)、选项支持句(evidences)、推理能力(reasoning_ability)、错误类型(error_type)、答案(answer)。具体数据样例如下所示。
-
-  <h5>Json格式：
+Json格式：
+~~~
 { "id": "gcrc_4916_8172", 
   "title": "我们需要怎样的科学素养", 
   "passage": "第八次中国公民科学素养调查显示，2010年，我国具备...激励科技创新、促进创新型国家建设，我们任重道远。", 
@@ -47,7 +47,7 @@
   "reasoning_ability": ["DTL-R","DTL-R","IND","IND"],
   "error_type": ["ITQ", "", "", ""],
   "answer": "A"
-}</h5>
+}~~~
 
 注：在数据样例中，字段“answer”、“evidences”和“error_type”分别对应子任务1（问题回答）、子任务2（支持句识别）和子任务3（错误类型识别）的输出。其中“error_type”字段只输出错误选项的错误类型。例如在本例中，“question”字段要求机器选出不正确的选项，本样例只有选项A与原文意思不符，因此“error_type”字段仅输出选项A的错误类型。
 ## 3.评价标准
