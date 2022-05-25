@@ -58,14 +58,14 @@
 </table>
 注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。
 具体推理能力（括号内为标签标号）为：
- - 细节推理（Detail understanding，DTL-R）
- - 共指推理（Coreference resolution，CO-REF）
- - 演绎推理（Deductive reasoning，DED）
- - 数字推理（Mathematical reasoning，MATH）
- - 时空推理（Temporal/spatial reasoning，TEM-SPA）
- - 因果推理（Cause-effect comprehension，CAUS-R）
- - 归纳推理（Inductive reasoning，IND）
- - 鉴赏分析（Appreciative analysis，APPREC）。
+- 细节推理（Detail understanding，DTL-R）
+- 共指推理（Coreference resolution，CO-REF）
+- 演绎推理（Deductive reasoning，DED）
+- 数字推理（Mathematical reasoning，MATH）
+- 时空推理（Temporal/spatial reasoning，TEM-SPA）
+- 因果推理（Cause-effect comprehension，CAUS-R）
+- 归纳推理（Inductive reasoning，IND）
+- 鉴赏分析（Appreciative analysis，APPREC）。
 
 ### 数据样例
 每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、问题(question)、选项(options)、选项支持句(evidences)、推理能力(reasoning_ability)、错误类型(error_type)、答案(answer)。具体数据样例如下所示。
@@ -137,8 +137,8 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
 - （2）模型文件：评测使用的模型，所提交模型必须真实可复现，文件命名为：model.zip。
 - 文件格式示例如下:
    >   GCRC.zip
-   >>   GCRC.json
-   >>   model.zip
+   >>>  GCRC.json
+   >>>  model.zip
 ## 5.奖项设置
 本次评测将评选出如下奖项。由中国中文信息学会计算语言学专委会（CIPS-CL）为获奖队伍提供荣誉证书。
 <table align='center'>
@@ -174,9 +174,9 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
   - c.参赛团队无法就作品疑议进行足够信服的解释说明；
 - （7）本次评测为参赛队伍提供一定数量的算力支持，超过限额后，超出部分需要自行购买。本次评测算力由北京并行科技有限公司赞助。
 - （8）如需使用本数据集进行课题研究及论文发表，应公开声明使用了山西大学提供的数据，并进行如下引用：
-  ~~~
+~~~
 TAN H, WANG X, JI Y, et al. GCRC: A New Challenging MRC Dataset from Gaokao Chinese for Explainable Evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330. 
-  ~~~
+~~~
 同时发信给hytan_2006@126.com，说明相关情况。
 
 #### 任务数据集发布地址：
