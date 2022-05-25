@@ -10,7 +10,15 @@
 机器阅读理解（Machine Reading Comprehension, MRC）是自然语言处理和人工智能领域的重要前沿课题，对提升机器的智能水平具有重要价值。目前，在众多公开可用数据集的驱动下，机器阅读理解模型取得了令人振奋的进展，但模型所具备的真实语言理解能力与人的期望相差甚远。为了促进机器智能向类人智能迈进，我们提出了“高考语文阅读理解可解释评测”任务(Gaokao Chinese Reading Comprehension, GCRC)。该任务不仅对模型的答题准确率进行评价，而且引入两个子任务“支持句识别”和“错误类型识别”对模型的中间推理能力进行评价，此外还提供了答题所需推理能力信息，帮助诊断模型的不足。具体来说，参赛者需要完成以下3个子任务：
 - 子任务1（问题回答）：输出问题答案。
 - 子任务2（支持句识别）：输出支持问题解答所需的原文句子，即每个选项对应的原文支持句。
-- 子任务3（错误类型识别）：针对错误选项，输出其错误类型。错误类型具体有7种（括号内为类型标签）：细节错误（Wrong details，DTL）、时间属性错误(Wrong temporal properties，TEMP)、主谓不一致（Wrong subject-predicate-object triple relationship，SPOT）、充要条件错误（Wrong necessary and sufficient conditions，NAS）、答非所问(Irrelevant to the question，ITQ)、因果错误（Wrong causality，CAUS）、无中生有（Irrelevant to the article，ITA）。
+- 子任务3（错误类型识别）：针对错误选项，输出其错误类型。
+  - 错误类型具体有7种（括号内为类型标签）：
+    - 细节错误（Wrong details，DTL）
+    - 时间属性错误(Wrong temporal properties，TEMP)
+    - 主谓不一致（Wrong subject-predicate-object triple relationship，SPOT）
+    - 充要条件错误（Wrong necessary and sufficient conditions，NAS）
+    - 答非所问(Irrelevant to the question，ITQ)
+    - 因果错误（Wrong causality，CAUS）
+    - 无中生有（Irrelevant to the article，ITA）。
 
 ## 2.评测数据
 ### 数据集规模
@@ -48,7 +56,16 @@
 <td> 863/3452 </td>
 </tr>
 </table>
-注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。具体推理能力（括号内为标签标号）为：细节推理（Detail understanding，DTL-R）、共指推理（Coreference resolution，CO-REF）、演绎推理（Deductive reasoning，DED）、数字推理（Mathematical reasoning，MATH）、时空推理（Temporal/spatial reasoning，TEM-SPA）、因果推理（Cause-effect comprehension，CAUS-R）、归纳推理（Inductive reasoning，IND）、鉴赏分析（Appreciative analysis，APPREC）。
+注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。
+具体推理能力（括号内为标签标号）为：
+ - 细节推理（Detail understanding，DTL-R）
+ - 共指推理（Coreference resolution，CO-REF）
+ - 演绎推理（Deductive reasoning，DED）
+ - 数字推理（Mathematical reasoning，MATH）
+ - 时空推理（Temporal/spatial reasoning，TEM-SPA）
+ - 因果推理（Cause-effect comprehension，CAUS-R）
+ - 归纳推理（Inductive reasoning，IND）
+ - 鉴赏分析（Appreciative analysis，APPREC）。
 
 ### 数据样例
 每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、问题(question)、选项(options)、选项支持句(evidences)、推理能力(reasoning_ability)、错误类型(error_type)、答案(answer)。具体数据样例如下所示。
@@ -119,9 +136,9 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
 - （1）输出结果文件：该文件是以utf-8为编码格式的json文件，其中的内容格式与训练数据集保持一致，结果文件格式不正确不予计算成绩。该文件命名为：GCRC.json;
 - （2）模型文件：评测使用的模型，所提交模型必须真实可复现，文件命名为：model.zip。
 - 文件格式示例如下:
-   >   |GCRC.zip
-   >>  |-- GCRC.json
-   >>  |-- model.zip
+   >   GCRC.zip
+   >>   GCRC.json
+   >>   model.zip
 ## 5.奖项设置
 本次评测将评选出如下奖项。由中国中文信息学会计算语言学专委会（CIPS-CL）为获奖队伍提供荣誉证书。
 <table align='center'>
@@ -157,9 +174,9 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
   - c.参赛团队无法就作品疑议进行足够信服的解释说明；
 - （7）本次评测为参赛队伍提供一定数量的算力支持，超过限额后，超出部分需要自行购买。本次评测算力由北京并行科技有限公司赞助。
 - （8）如需使用本数据集进行课题研究及论文发表，应公开声明使用了山西大学提供的数据，并进行如下引用：
-~~~
+  ~~~
 TAN H, WANG X, JI Y, et al. GCRC: A New Challenging MRC Dataset from Gaokao Chinese for Explainable Evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330. 
-~~~
+  ~~~
 同时发信给hytan_2006@126.com，说明相关情况。
 
 #### 任务数据集发布地址：
