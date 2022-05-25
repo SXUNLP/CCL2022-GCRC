@@ -141,6 +141,7 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
 
    >   GCRC.zip
    >>  GCRC.json
+   >> 
    >>  model.zip
 
 ## 5.奖项设置
