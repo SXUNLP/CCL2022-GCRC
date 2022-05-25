@@ -14,27 +14,14 @@ hytan_2006@126.com 或sxy_sxu@163.com
 数据集规模
 本评测使用山西大学提供的GCRC数据集，数据主要来源于高考语文阅读理解题目。数据集相关信息如表1所示。
 
-
-| 栏目1 | 栏目2 |
-| ----- | ----- |
-| 内容1 | 内容2 |
-
-| 栏目1 | 栏目2 |
-| ----- | ----- |
-| 内容1 | 内容2 |
 表1 GCRC数据集规模
-
-<tr>
-	<th text-align="center“>Training-Set </th>
-			<th text-align="center“>Training-Set </th>
-</tr>
-	Training-Set	Dev-Set
-子任务1的篇章数	3790	683
-子任务1的问题数	6994	863
-子任务2的问题/选项数	2021/8084	863/3452
-子任务3的问题/错误选项数	2000/3253	863/1437
-标注推理能力的问题/选项数	-	863/3452
-
+|   | Training-Set | Dev-Set |
+| -- | -- | -- |
+| 子任务1的篇章数 | 3790 | 683 |
+| 子任务1的问题数 | 6994 | 863 |
+| 子任务2的问题/选项数 | 2021/8084 | 863/3452 |
+| 子任务3的问题/错误选项数 | 2000/3253 | 863/1437 |
+| 标注推理能力的问题/选项数 | - | 863/3452 |
 
 注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。具体推理能力（括号内为标签标号）为：细节推理（Detail understanding，DTL-R）、共指推理（Coreference resolution，CO-REF）、演绎推理（Deductive reasoning，DED）、数字推理（Mathematical reasoning，MATH）、时空推理（Temporal/spatial reasoning，TEM-SPA）、因果推理（Cause-effect comprehension，CAUS-R）、归纳推理（Inductive reasoning，IND）、鉴赏分析（Appreciative analysis，APPREC）。
 数据样例
