@@ -3,7 +3,7 @@
 - 组织者：谭红叶(hytan_2006@126.com)
 - 联系人：孙欣伊(sxy_sxu@163.com)，赵云肖，闫智超
 
-评测任务详细内容可查看评测网站：[https://github.com/SXUNLP/CCL2022-GCRC](https://github.com/blcuicall/CCL2022-CGEC)，遇到任何问题请发邮件或在[Issue](https://github.com/SXUNLP/CCL2022-GCRC/issues)中提问，欢迎大家参与。
+评测任务详细内容可查看评测网站：[https://github.com/SXUNLP/CCL2022-GCRC](https://github.com/SXUNLP/CCL2022-GCRC)，遇到任何问题请发邮件或在[Issue](https://github.com/SXUNLP/CCL2022-GCRC/issues)中提问，欢迎大家参与。
 
 ## 1.任务内容
 ### 任务简介：
