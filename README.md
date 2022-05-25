@@ -35,7 +35,7 @@
 <td> 3790 </td>
 <td> 683 </td>
 </tr>
-<tr>
+<tr align='center'>
 <td> 子任务1的问题数  </td>
 <td> 6994 </td>
 <td> 863 </td>
@@ -57,6 +57,7 @@
 </tr>
 </table>
 注：GCRC数据集还提供了答题所需推理能力的标注信息，以指导参评者了解模型缺陷，有针对性地提升模型性能。
+
 具体推理能力（括号内为标签标号）为：
 - 细节推理（Detail understanding，DTL-R）
 - 共指推理（Coreference resolution，CO-REF）
@@ -136,7 +137,8 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
 - （1）输出结果文件：该文件是以utf-8为编码格式的json文件，其中的内容格式与训练数据集保持一致，结果文件格式不正确不予计算成绩。该文件命名为：GCRC.json;
 - （2）模型文件：评测使用的模型，所提交模型必须真实可复现，文件命名为：model.zip。
 - 文件格式示例如下:
-   >   GCRC.zip
+   >
+   >>   GCRC.zip
    >>>  GCRC.json
    >>>  model.zip
 ## 5.奖项设置
