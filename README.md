@@ -139,10 +139,10 @@ Score=(Task1_ACC+Task2_F1+Task3_ACC)/3
 - （2）模型文件：评测使用的模型，所提交模型必须真实可复现，文件命名为：model.zip。
 - 文件格式示例如下:
 
-   >   GCRC.zip
-   >>  GCRC.json
+   >  --GCRC.zip
+   >> ----GCRC.json
    >> 
-   >>  model.zip
+   >> ----model.zip
 
 ## 5.奖项设置
 本次评测将评选出如下奖项。由中国中文信息学会计算语言学专委会（CIPS-CL）为获奖队伍提供荣誉证书。
