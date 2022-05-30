@@ -189,9 +189,9 @@ $$Score=\frac{Task1-ACC+Task2-F1+Task3-ACC}{3}$$
 
 - （7）本次评测为参赛队伍提供一定数量的算力支持，超过限额后，超出部分需要自行购买。本次评测算力由北京并行科技有限公司赞助。
 - （8）如需使用本数据集进行课题研究及论文发表，应公开声明使用了山西大学提供的数据，并进行如下引用：
-~~~
-TAN H, WANG X, JI Y, et al. GCRC: A New Challenging MRC Dataset from Gaokao Chinese for Explainable Evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330. 
-~~~
+
+    TAN H, WANG X, JI Y, et al. GCRC: A New Challenging MRC Dataset from Gaokao Chinese for Explainable Evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330. 
+
 同时发信给hytan_2006@126.com，说明相关情况。
 
 #### 任务数据集发布地址：
