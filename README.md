@@ -135,6 +135,7 @@ $$Score=\frac{Task1-ACC+Task2-F1+Task3-ACC}{3}$$
 - 4.审核模型，公布评测结果：8月30日
 - 5.提交评测论文：9月25日
 - 6.报告及颁奖：10月14日
+
 （以上时间均为暂定，请关注 [CCL 2022](http://cips-cl.org/static/CCL2022/index.html) 官方网站。）
 
 ### 结果提交：
