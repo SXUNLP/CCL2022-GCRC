@@ -130,7 +130,7 @@ $$Score=\frac{Task1-ACC+Task2-F1+Task3-ACC}{3}$$
 - 1.报名时间：6月3日-7月31日
 - 2.发布训练、验证及测试数据：6月5日
 
-完成报名后，参赛队伍在[智源指数平台](http://cuge.baai.ac.cn/#/dataset?id=22&name=GCRC)获取评测数据。
+完成报名后，参赛队伍在[智源指数平台](http://cuge.baai.ac.cn/#/ccl_gcrc)获取评测数据。
 - 3.截止提交评测结果及模型代码：8月15日
 - 4.审核模型，公布评测结果：8月30日
 - 5.截止提交评测论文：9月25日
@@ -139,7 +139,7 @@ $$Score=\frac{Task1-ACC+Task2-F1+Task3-ACC}{3}$$
 （以上时间均为暂定，请关注 [CCL 2022](http://cips-cl.org/static/CCL2022/index.html) 官方网站。）
 
 ### 结果提交：
-本次评测结果在[智源指数平台](http://cuge.baai.ac.cn/#/dataset?id=22&name=GCRC)进行提交和排名，届时智源指数网站将开通相应的提交与评测系统，参赛者可以在网站上注册账号并提交相应的测试文件。在参赛期间，严禁参赛团队注册其它账号多次提交。
+本次评测结果在[智源指数平台](http://cuge.baai.ac.cn/#/ccl_gcrc)进行提交和排名，届时智源指数网站将开通相应的提交与评测系统，参赛者可以在网站上注册账号并提交相应的测试文件。在参赛期间，严禁参赛团队注册其它账号多次提交。
 
 提交规则：
 
@@ -197,7 +197,7 @@ $$Score=\frac{Task1-ACC+Task2-F1+Task3-ACC}{3}$$
 同时发信给hytan_2006@126.com，说明相关情况。
 
 #### 任务数据集发布地址：
-http://cuge.baai.ac.cn/#/dataset?id=22&name=GCRC
+http://cuge.baai.ac.cn/#/ccl_gcrc
 
 #### 评测单位
 山西大学
